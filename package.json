@@ -11,18 +11,17 @@
   "dependencies": {
     "expo": "^32.0.0",
     "expokit": "32.1.1",
+    "mocha": "^6.1.4",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0",
-    "detox": "^12.4.1",
-    "jest": "^24.7.1"
+    "detox": "^12.4.1"
   },
   "private": true,
   "detox": {
-    "test-runner": "jest",
-    "runner-config": "e2e/config.json",
+    "test-runner": "mocha",
     "configurations": {
       "ios.sim.debug": {
         "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/expokit-detox-test.app",
