@@ -1,0 +1,1827 @@
+detox[74930] INFO:  [test.js] [32mconfiguration="ios.sim.debug" loglevel="trace" artifactsLocation="artifacts/ios.sim.debug.2019-04-26 09-24-08Z" recordLogs="none" takeScreenshots="manual" recordVideos="none" recordPerformance="none" node_modules/.bin/jest --config=e2e/config.json --maxWorkers=1 '--testNamePattern=^((?!:android:).)*$' "e2e"[39m
+detox[74931] INFO:  [DetoxServer.js] [32mserver listening on localhost:63374...[39m
+detox[74931] DEBUG: [AsyncWebSocket.js/WEBSOCKET_OPEN] [36mopened web socket to: ws://localhost:63374[39m
+detox[74931] TRACE: [AsyncWebSocket.js/WEBSOCKET_SEND] [90m{"type":"login","params":{"sessionId":"03e82974-2785-e385-ffc7-8e33bc490afc","role":"tester"},"messageId":0}[39m
+detox[74931] DEBUG: [DetoxServer.js/LOGIN] [36mrole=tester, sessionId=03e82974-2785-e385-ffc7-8e33bc490afc[39m
+detox[74931] DEBUG: [DetoxServer.js/LOGIN_SUCCESS] [36mrole=tester, sessionId=03e82974-2785-e385-ffc7-8e33bc490afc[39m
+detox[74931] TRACE: [AsyncWebSocket.js/WEBSOCKET_MESSAGE] [90m{"type":"loginSuccess","params":{"sessionId":"03e82974-2785-e385-ffc7-8e33bc490afc","role":"tester"},"messageId":0}[39m
+[90m [39m
+detox[74931] DEBUG: [exec.js/EXEC_CMD, #0] [36m/usr/bin/xcrun simctl list -j[39m
+detox[74931] TRACE: [exec.js/EXEC_SUCCESS, #0] [90m{[39m
+[90m  "devicetypes" : [[39m
+[90m    {[39m
+[90m      "name" : "iPhone 4s",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 4s.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-4s"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPhone 5",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 5.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-5"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPhone 5s",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 5s.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-5s"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPhone 6",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 6.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-6"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPhone 6 Plus",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 6 Plus.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-6-Plus"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPhone 6s",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 6s.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-6s"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPhone 6s Plus",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 6s Plus.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-6s-Plus"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPhone 7",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 7.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-7"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPhone 7 Plus",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 7 Plus.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-7-Plus"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPhone 8",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 8.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-8"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPhone 8 Plus",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 8 Plus.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-8-Plus"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPhone SE",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone SE.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-SE"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPhone X",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone X.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-X"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPhone Xs",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone Xs.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-XS"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPhone Xs Max",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone Xs Max.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-XS-Max"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPhone Xʀ",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone Xʀ.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-XR"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPad 2",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPad 2.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-2"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPad Retina",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Retina.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Retina"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPad Air",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Air.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Air"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPad Air 2",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Air 2.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Air-2"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPad (5th generation)",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPad (5th generation).simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad--5th-generation-"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPad Pro (9.7-inch)",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (9.7-inch).simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro--9-7-inch-"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPad Pro (12.9-inch)",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (12.9-inch).simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPad Pro (12.9-inch) (2nd generation)",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (12.9-inch) (2nd generation).simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro--12-9-inch---2nd-generation-"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPad Pro (10.5-inch)",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (10.5-inch).simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro--10-5-inch-"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPad (6th generation)",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPad (6th generation).simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad--6th-generation-"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPad Pro (11-inch)",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (11-inch).simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro--11-inch-"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "iPad Pro (12.9-inch) (3rd generation)",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (12.9-inch) (3rd generation).simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro--12-9-inch---3rd-generation-"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "Apple TV",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/AppleTVOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/Apple TV.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-TV-1080p"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "Apple TV 4K",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/AppleTVOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/Apple TV 4K.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-TV-4K-4K"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "Apple TV 4K (at 1080p)",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/AppleTVOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/Apple TV 4K (at 1080p).simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-TV-4K-1080p"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "Apple Watch - 38mm",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/Apple Watch - 38mm.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-Watch-38mm"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "Apple Watch - 42mm",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/Apple Watch - 42mm.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-Watch-42mm"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "Apple Watch Series 2 - 38mm",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/Apple Watch Series 2 - 38mm.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-2-38mm"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "Apple Watch Series 2 - 42mm",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/Apple Watch Series 2 - 42mm.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-2-42mm"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "Apple Watch Series 3 - 38mm",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/Apple Watch Series 3 - 38mm.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-3-38mm"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "Apple Watch Series 3 - 42mm",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/Apple Watch Series 3 - 42mm.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-3-42mm"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "Apple Watch Series 4 - 40mm",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/Apple Watch Series 4 - 40mm.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-4-40mm"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "name" : "Apple Watch Series 4 - 44mm",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/Apple Watch Series 4 - 44mm.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-4-44mm"[39m
+[90m    }[39m
+[90m  ],[39m
+[90m  "runtimes" : [[39m
+[90m    {[39m
+[90m      "bundlePath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS 9.3.simruntime",[39m
+[90m      "availabilityError" : "",[39m
+[90m      "buildversion" : "13E233",[39m
+[90m      "availability" : "(available)",[39m
+[90m      "isAvailable" : true,[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimRuntime.iOS-9-3",[39m
+[90m      "version" : "9.3",[39m
+[90m      "name" : "iOS 9.3"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "bundlePath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS 11.3.simruntime",[39m
+[90m      "availabilityError" : "",[39m
+[90m      "buildversion" : "15E217",[39m
+[90m      "availability" : "(available)",[39m
+[90m      "isAvailable" : true,[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimRuntime.iOS-11-3",[39m
+[90m      "version" : "11.3",[39m
+[90m      "name" : "iOS 11.3"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "bundlePath" : "\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS 12.1.simruntime",[39m
+[90m      "availabilityError" : "",[39m
+[90m      "buildversion" : "16B91",[39m
+[90m      "availability" : "(available)",[39m
+[90m      "isAvailable" : true,[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimRuntime.iOS-12-1",[39m
+[90m      "version" : "12.1",[39m
+[90m      "name" : "iOS 12.1"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime",[39m
+[90m      "availabilityError" : "",[39m
+[90m      "buildversion" : "16B91",[39m
+[90m      "availability" : "(available)",[39m
+[90m      "isAvailable" : true,[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimRuntime.iOS-12-1",[39m
+[90m      "version" : "12.1",[39m
+[90m      "name" : "iOS 12.1"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/AppleTVOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/Runtimes\/tvOS.simruntime",[39m
+[90m      "availabilityError" : "",[39m
+[90m      "buildversion" : "16J602",[39m
+[90m      "availability" : "(available)",[39m
+[90m      "isAvailable" : true,[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimRuntime.tvOS-12-1",[39m
+[90m      "version" : "12.1",[39m
+[90m      "name" : "tvOS 12.1"[39m
+[90m    },[39m
+[90m    {[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/Runtimes\/watchOS.simruntime",[39m
+[90m      "availabilityError" : "",[39m
+[90m      "buildversion" : "16R591",[39m
+[90m      "availability" : "(available)",[39m
+[90m      "isAvailable" : true,[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimRuntime.watchOS-5-1",[39m
+[90m      "version" : "5.1",[39m
+[90m      "name" : "watchOS 5.1"[39m
+[90m    }[39m
+[90m  ],[39m
+[90m  "devices" : {[39m
+[90m    "com.apple.CoreSimulator.SimRuntime.watchOS-5-1" : [[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "Apple Watch Series 2 - 38mm",[39m
+[90m        "udid" : "061178D7-AC76-4914-975C-12413C43CA9F",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "Apple Watch Series 2 - 42mm",[39m
+[90m        "udid" : "FE47997D-97B4-4537-9279-14ECB495C27F",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "Apple Watch Series 3 - 38mm",[39m
+[90m        "udid" : "EBA23FE5-E8D7-4B54-A85D-4A9E2436414F",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "Apple Watch Series 3 - 42mm",[39m
+[90m        "udid" : "694BA931-152C-4E99-8AB0-CC2B018CD359",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "Apple Watch Series 4 - 40mm",[39m
+[90m        "udid" : "DA47418B-994E-4258-8456-EE87B631816F",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "Apple Watch Series 4 - 44mm",[39m
+[90m        "udid" : "1F5FD61F-1C06-484F-BA7F-AB85F6AE132C",[39m
+[90m        "availabilityError" : ""[39m
+[90m      }[39m
+[90m    ],[39m
+[90m    "com.apple.CoreSimulator.SimRuntime.tvOS-11-4" : [[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple TV",[39m
+[90m        "udid" : "59CE8919-0438-4FE3-8781-5EBF037BF38D",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple TV 4K",[39m
+[90m        "udid" : "D23306B6-D22E-4B4C-B9B9-DEB7EFACA607",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple TV 4K (at 1080p)",[39m
+[90m        "udid" : "6D7888A9-A461-498A-9F11-5CF90EB7ACB1",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      }[39m
+[90m    ],[39m
+[90m    "com.apple.CoreSimulator.SimRuntime.iOS-11-3" : [[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 5s",[39m
+[90m        "udid" : "6DF56A81-0F62-4F7F-BF07-BC718393A3E0",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 6",[39m
+[90m        "udid" : "84EE300B-9094-48CC-AA06-E2CEC02F1E5A",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 6 Plus",[39m
+[90m        "udid" : "B13E4D10-218F-4959-B0C5-3C481BC26010",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 6s",[39m
+[90m        "udid" : "71A151FE-497B-48A3-8FC6-22BEBE9FF14B",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 6s Plus",[39m
+[90m        "udid" : "0D68A742-2D9C-4FB4-991B-C9E69BD2A309",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 7",[39m
+[90m        "udid" : "443FB635-7E9B-4934-99B3-8EBF501337D0",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 7 Plus",[39m
+[90m        "udid" : "BD62739C-9901-440F-9B27-DD12C7B8E944",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 8",[39m
+[90m        "udid" : "950AC65F-1ACC-4ADE-B9E2-73C079A5D266",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 8 Plus",[39m
+[90m        "udid" : "B70B5600-1B9B-43EA-9943-1780FE442C02",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone X",[39m
+[90m        "udid" : "F9238569-66BD-4737-B144-3B0A24BFB2B7",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPad Air",[39m
+[90m        "udid" : "DEA57C0A-E790-4C43-AAB2-9212694A0D50",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPad Air 2",[39m
+[90m        "udid" : "785DDEF0-6C7D-41D8-88CA-42C19DB0CAB9",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPad (5th generation)",[39m
+[90m        "udid" : "43B78CD6-6081-4875-BC4D-1B34790B51FA",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPad Pro (9.7-inch)",[39m
+[90m        "udid" : "9B66CE1F-06A0-4D0C-83B8-3C229D2F10C9",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPad Pro (12.9-inch)",[39m
+[90m        "udid" : "E01C5EE8-7A60-46D0-9EA0-F84FEFC5473D",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPad Pro (12.9-inch) (2nd generation)",[39m
+[90m        "udid" : "AD4BF1A9-DFD3-4EB0-B13F-15CDF6A29034",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPad Pro (10.5-inch)",[39m
+[90m        "udid" : "464C0168-0DFC-43F6-A35B-6A6144C5117C",[39m
+[90m        "availabilityError" : ""[39m
+[90m      }[39m
+[90m    ],[39m
+[90m    "com.apple.CoreSimulator.SimRuntime.watchOS-5-2" : [[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple Watch Series 2 - 38mm",[39m
+[90m        "udid" : "41A5FF0C-9CEA-4F21-AB13-33821DEDEAC4",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple Watch Series 2 - 42mm",[39m
+[90m        "udid" : "03382CAE-61F2-4EBC-9AFD-DC0FF2426033",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple Watch Series 3 - 38mm",[39m
+[90m        "udid" : "1A140342-61E4-4617-B6D5-2C17AC638E71",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple Watch Series 3 - 42mm",[39m
+[90m        "udid" : "D3ACBEAA-A918-4E3B-B831-680F373147BF",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple Watch Series 4 - 40mm",[39m
+[90m        "udid" : "69ED2D44-7438-4994-8C6B-31E66731DD79",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple Watch Series 4 - 44mm",[39m
+[90m        "udid" : "7D9F5703-2CA4-4DAC-99C4-04B5A1A94BAF",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      }[39m
+[90m    ],[39m
+[90m    "com.apple.CoreSimulator.SimRuntime.iOS-11-4" : [[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 5s",[39m
+[90m        "udid" : "B6F7D066-B6B8-4289-82ED-4CD63F1390FA",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 6",[39m
+[90m        "udid" : "6515A574-EE89-4B2B-ABB5-7F569DC14FCF",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 6 Plus",[39m
+[90m        "udid" : "0BEA2886-E7A6-40AB-9580-2D27F857BB29",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 6s",[39m
+[90m        "udid" : "C8BA6E29-C3A4-48FD-A203-0D25061D439A",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 6s Plus",[39m
+[90m        "udid" : "7D7558D2-1DD1-432F-A681-F5057307A9F7",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 7",[39m
+[90m        "udid" : "C6B0D43F-7534-4392-8D96-763E52020BED",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 7 Plus",[39m
+[90m        "udid" : "122559D0-F132-4DEA-945B-31FEBA1F653E",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 8",[39m
+[90m        "udid" : "056254BB-D3F8-4D4E-9A26-4A63956C1DA1",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 8 Plus",[39m
+[90m        "udid" : "369E55F2-7F5B-4521-8819-C80E1EEF2502",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone SE",[39m
+[90m        "udid" : "938B3FD9-6BB5-4726-A339-1D56A5F7C8CC",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone X",[39m
+[90m        "udid" : "05E10C97-FD46-4268-869C-06CE2F1F147E",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad Air",[39m
+[90m        "udid" : "5D2D4E0C-C062-4F17-9AB1-EF0B2FEA4D83",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad Air 2",[39m
+[90m        "udid" : "B02B5F62-E242-4555-ADF2-39FF7164C993",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad (5th generation)",[39m
+[90m        "udid" : "BFE7C464-C62E-4FB0-8145-E8026191FD05",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad Pro (9.7-inch)",[39m
+[90m        "udid" : "6295B208-F330-4A08-AE42-08A5531A6531",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad Pro (12.9-inch)",[39m
+[90m        "udid" : "8B2B0CA4-1CD8-4DD2-8EC2-10C290A952E6",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad Pro (12.9-inch) (2nd generation)",[39m
+[90m        "udid" : "33532CF4-9539-4759-A92F-93B5B54623F7",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad Pro (10.5-inch)",[39m
+[90m        "udid" : "8E5DE5A7-F479-4CFF-8EF1-3E34FD36882F",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      }[39m
+[90m    ],[39m
+[90m    "com.apple.CoreSimulator.SimRuntime.iOS-12-0" : [[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 5s",[39m
+[90m        "udid" : "B8C4C2EC-A432-461E-B027-F0BD814EDF76",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 6",[39m
+[90m        "udid" : "3F100679-6FA3-4F40-9579-275F0712AA5A",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 6 Plus",[39m
+[90m        "udid" : "0B63046B-3AC8-4B2D-B08F-EAC3BD731370",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 6s",[39m
+[90m        "udid" : "7B9BB706-FDFB-40F6-8F3B-F1391E14093F",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 6s Plus",[39m
+[90m        "udid" : "CE33C78D-60A9-4681-89F5-E9A222F3E3CB",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 7",[39m
+[90m        "udid" : "E2FF4BBD-6C71-4B16-B549-B91C59F1AD2C",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 7 Plus",[39m
+[90m        "udid" : "DE64815D-4948-44C2-AB99-3688687726E3",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 8",[39m
+[90m        "udid" : "306F8BA2-2054-4921-8962-96DC163B6AB3",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 8 Plus",[39m
+[90m        "udid" : "50E7C8F9-F2E8-4DD2-A9F6-B17BC96B03B5",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone SE",[39m
+[90m        "udid" : "B7CA8D5A-DECC-4F4F-BA35-79C5442168AB",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone X",[39m
+[90m        "udid" : "B7D23FA0-EBAC-4D09-847D-75BFBDF0DE93",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone XS",[39m
+[90m        "udid" : "64455551-525E-48AD-91D7-165C460891D5",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone XS Max",[39m
+[90m        "udid" : "F2140085-402A-4AEA-BB21-10FA6CD96DF3",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone XR",[39m
+[90m        "udid" : "F7DCC2C7-8E05-4346-A997-A58485AFF6BB",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad Air",[39m
+[90m        "udid" : "B5CF4DA4-7B24-4A55-A0CD-A974DC337A43",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad Air 2",[39m
+[90m        "udid" : "C148E801-372A-4E88-884A-CBB2DE9E1EE1",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad (5th generation)",[39m
+[90m        "udid" : "2D4604F2-B98E-4C96-9551-20174B2ADA79",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad Pro (9.7-inch)",[39m
+[90m        "udid" : "3FDE842D-1459-4DA9-B083-8A6E8B963518",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad Pro (12.9-inch)",[39m
+[90m        "udid" : "B344ED98-B77A-4B34-B4B6-9EF764C02E74",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad Pro (12.9-inch) (2nd generation)",[39m
+[90m        "udid" : "76E131B3-C383-46CD-B289-493F53F6DE5F",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad Pro (10.5-inch)",[39m
+[90m        "udid" : "6588969C-64B1-488B-9B96-25F5E9DECC07",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad (6th generation)",[39m
+[90m        "udid" : "9DCF4D14-AABB-474B-8262-1A1798320595",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      }[39m
+[90m    ],[39m
+[90m    "com.apple.CoreSimulator.SimRuntime.iOS-9-3" : [[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 4s",[39m
+[90m        "udid" : "6CFD0FDF-E46D-49EF-BB96-09E6225601D7",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 5",[39m
+[90m        "udid" : "A30D0398-53AB-4CFE-BDD7-854EF896FEA2",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 5s",[39m
+[90m        "udid" : "A971E6AD-F3D6-4DA6-ACD1-BB814012FCB5",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 6",[39m
+[90m        "udid" : "A88D059D-F1F8-4ED7-B48D-1660C5D85603",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 6 Plus",[39m
+[90m        "udid" : "51D2E0FF-1B19-41E9-B22D-F8CA8CFEE348",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 6s",[39m
+[90m        "udid" : "DCCC890E-E9DC-4239-AEF9-214AB8FA0029",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 6s Plus",[39m
+[90m        "udid" : "D729E243-5DE9-4B12-9C97-4F1091F4A65F",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPad 2",[39m
+[90m        "udid" : "1BDC6111-2A2B-4251-8A22-45051B3903AA",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPad Retina",[39m
+[90m        "udid" : "5A214CFE-9077-4FEF-B719-22C7E9C659DD",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPad Air",[39m
+[90m        "udid" : "77386217-B6E9-4E50-A697-F6E17853EFB9",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPad Air 2",[39m
+[90m        "udid" : "8099EFD6-108A-410F-953B-D14A78C0B646",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPad Pro",[39m
+[90m        "udid" : "FE6A168A-9AA8-41C7-940B-B6B2DB1CD4EF",[39m
+[90m        "availabilityError" : ""[39m
+[90m      }[39m
+[90m    ],[39m
+[90m    "com.apple.CoreSimulator.SimRuntime.iOS-12-1" : [[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 5s",[39m
+[90m        "udid" : "71920DD4-34D9-4645-985F-218320CA3642",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 6",[39m
+[90m        "udid" : "DBB3F60E-9F91-439F-AE9C-22080977116F",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 6 Plus",[39m
+[90m        "udid" : "E2EA6D24-1D81-4A2D-947D-5CDB641FBCFB",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 6s",[39m
+[90m        "udid" : "A0CFAC29-78D1-4411-9A60-C1941B9B98BC",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 6s Plus",[39m
+[90m        "udid" : "93EA3B26-D67D-4F99-8918-DD0C27B71ABD",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Booted",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 7",[39m
+[90m        "udid" : "3D28C903-3C4F-4AB1-B976-6742420D6332",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 7 Plus",[39m
+[90m        "udid" : "5EE6A620-0AD3-45B4-800A-D05CAB4F2C36",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 8",[39m
+[90m        "udid" : "80AFD0CE-C493-4DE0-BCEF-5C9CCF092992",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone 8 Plus",[39m
+[90m        "udid" : "3A9317AA-F337-4608-9A2A-76B1DDB2A0DC",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone SE",[39m
+[90m        "udid" : "89082ECA-352F-4821-A046-9110EB40273E",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone X",[39m
+[90m        "udid" : "7747F6E1-3C45-4FA1-988B-41EB41FF92B1",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone XS",[39m
+[90m        "udid" : "BC9ADB3B-C0DF-4ED8-9FE9-FA3259BF1399",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone XS Max",[39m
+[90m        "udid" : "BBD5ED2A-0B69-4987-94DC-BE83DAAAB9CD",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPhone XR",[39m
+[90m        "udid" : "C28495AB-B82D-4FF9-A744-8BA846742831",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPad Air",[39m
+[90m        "udid" : "AE7A1A9A-B50E-422C-8032-B2B24D038C16",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPad Air 2",[39m
+[90m        "udid" : "6C31FBBE-8AED-4D8A-8F31-69E2943753D5",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPad (5th generation)",[39m
+[90m        "udid" : "F03B2B16-E96D-4E53-A083-DDA6B7585AAF",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPad Pro (9.7-inch)",[39m
+[90m        "udid" : "E27CC9B5-7F97-4107-A3B9-27AD741EBC96",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPad Pro (12.9-inch)",[39m
+[90m        "udid" : "6BC65D1F-F6CF-4DF9-8676-40E00A4C91CF",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPad Pro (12.9-inch) (2nd generation)",[39m
+[90m        "udid" : "D322D84B-36FC-4CF5-A456-655DD9626099",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPad Pro (10.5-inch)",[39m
+[90m        "udid" : "0485A026-BC4B-4211-B197-712F295084D1",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPad (6th generation)",[39m
+[90m        "udid" : "E514FE30-5586-4BEE-B102-AC123C1E0790",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPad Pro (11-inch)",[39m
+[90m        "udid" : "3D0567B7-9FEC-43DA-80E9-E3D8CE63E699",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "iPad Pro (12.9-inch) (3rd generation)",[39m
+[90m        "udid" : "9CFD57D4-9557-491F-B915-63E446D5C9C0",[39m
+[90m        "availabilityError" : ""[39m
+[90m      }[39m
+[90m    ],[39m
+[90m    "com.apple.CoreSimulator.SimRuntime.tvOS-12-0" : [[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple TV",[39m
+[90m        "udid" : "88740356-BE1E-4D36-BE7D-9FE8E1106B5E",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple TV 4K",[39m
+[90m        "udid" : "132350CD-EE23-4BE7-AEE6-481834615EB7",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple TV 4K (at 1080p)",[39m
+[90m        "udid" : "1B6B385A-22A1-4573-BEEF-78ED444BBE81",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      }[39m
+[90m    ],[39m
+[90m    "com.apple.CoreSimulator.SimRuntime.iOS-12-2" : [[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 5s",[39m
+[90m        "udid" : "58F33FD8-18F9-4A13-A123-D5E0568BC7BC",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 6",[39m
+[90m        "udid" : "3E7CC3EC-7441-414C-BA0D-C852B4417156",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 6 Plus",[39m
+[90m        "udid" : "E91179C2-9598-458D-810A-30DD598ACC29",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 6s",[39m
+[90m        "udid" : "599C257D-EA3E-4C28-9D66-E48CF70FC463",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 6s Plus",[39m
+[90m        "udid" : "D5F01B26-F603-4C74-B0D3-E7CAC76805A5",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 7",[39m
+[90m        "udid" : "F1ED468F-EAAE-44F1-8347-5DB387309850",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 7 Plus",[39m
+[90m        "udid" : "0F438BCC-27BE-4DA2-AAE5-3099E32CB679",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 8",[39m
+[90m        "udid" : "2DD3F01C-99BF-4F0E-AB0E-5965BA2B64C4",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone 8 Plus",[39m
+[90m        "udid" : "90580A50-CDAA-4453-B0D1-D2B7BA297BCD",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone X",[39m
+[90m        "udid" : "11B8D2A4-B4C9-4107-A8DB-B02B4953FF54",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone Xs",[39m
+[90m        "udid" : "19879E87-E65E-48DA-BBF1-A5C6E2364226",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone Xs Max",[39m
+[90m        "udid" : "C80345D0-32D0-4DC2-B4B7-E66B19733CBA",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPhone Xʀ",[39m
+[90m        "udid" : "5112D77F-10C2-4E48-A56F-33300D941027",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad Air",[39m
+[90m        "udid" : "A3005719-EEEF-40DB-A084-3A5D4AD985CC",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad Air 2",[39m
+[90m        "udid" : "84EF88CF-9E45-4084-85D8-348FE4BEC2FF",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad (5th generation)",[39m
+[90m        "udid" : "F313A27B-914D-4859-A80C-2FBB49D14846",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad Pro (9.7-inch)",[39m
+[90m        "udid" : "9FEC58B6-3C2A-4251-8078-8F022D43B582",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad Pro (12.9-inch)",[39m
+[90m        "udid" : "4DA97B5B-9E84-4EDE-A4EE-F5FD9222DE78",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad Pro (12.9-inch) (2nd generation)",[39m
+[90m        "udid" : "A92BDC49-B401-4BC1-B359-34F76A87682D",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad Pro (10.5-inch)",[39m
+[90m        "udid" : "365E6892-D7D6-4AED-ACF6-BA5D30CC9FF1",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad (6th generation)",[39m
+[90m        "udid" : "DC0678D8-B2A2-4EE2-A474-3B8F3A262220",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad Pro (11-inch)",[39m
+[90m        "udid" : "5748A3D5-B44E-47DB-B240-276461375326",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad Pro (12.9-inch) (3rd generation)",[39m
+[90m        "udid" : "5B9C371D-D9A2-41DC-937A-311FFC45F16C",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "iPad Air (3rd generation)",[39m
+[90m        "udid" : "771DC755-5DC2-4797-9497-805F29FF1604",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      }[39m
+[90m    ],[39m
+[90m    "com.apple.CoreSimulator.SimRuntime.watchOS-4-3" : [[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple Watch - 38mm",[39m
+[90m        "udid" : "77725BCF-521F-4326-A417-553C464E5866",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple Watch - 42mm",[39m
+[90m        "udid" : "616F4E00-4E9F-4581-9EF9-A291825321EC",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple Watch Series 2 - 38mm",[39m
+[90m        "udid" : "E27AC9C0-5284-4833-8A68-73C5E795CD4D",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple Watch Series 2 - 42mm",[39m
+[90m        "udid" : "1B79852C-9FA4-499E-9EB3-6F12DD49A94A",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple Watch Series 3 - 38mm",[39m
+[90m        "udid" : "68061C78-4BF1-44C9-AB14-97F04D76C86E",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple Watch Series 3 - 42mm",[39m
+[90m        "udid" : "5F8C8B5D-9A24-4F1B-8826-69ACD5ADAC2F",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      }[39m
+[90m    ],[39m
+[90m    "com.apple.CoreSimulator.SimRuntime.tvOS-12-1" : [[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "Apple TV",[39m
+[90m        "udid" : "33D9674D-DD29-495E-8AB1-082671C495B1",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "Apple TV 4K",[39m
+[90m        "udid" : "08E8B782-6AFD-4B8A-BAB0-FC4111FFD094",[39m
+[90m        "availabilityError" : ""[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(available)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : true,[39m
+[90m        "name" : "Apple TV 4K (at 1080p)",[39m
+[90m        "udid" : "C28E9B46-ABF4-44BD-991A-9A789F217C8D",[39m
+[90m        "availabilityError" : ""[39m
+[90m      }[39m
+[90m    ],[39m
+[90m    "com.apple.CoreSimulator.SimRuntime.watchOS-5-0" : [[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple Watch Series 2 - 38mm",[39m
+[90m        "udid" : "51003F3E-D6B1-4360-84DF-84B8EA816974",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple Watch Series 2 - 42mm",[39m
+[90m        "udid" : "FC0285C8-E932-4EE9-9AA9-F1B2C59C3807",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple Watch Series 3 - 38mm",[39m
+[90m        "udid" : "5F3D8336-1A0C-4812-9107-72DBF0FCB6C4",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple Watch Series 3 - 42mm",[39m
+[90m        "udid" : "CD1A41DB-65D8-4116-80EB-526C10774E1E",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple Watch Series 4 - 40mm",[39m
+[90m        "udid" : "F2B06159-CEB2-41B3-8389-01B0FD9C39BF",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple Watch Series 4 - 44mm",[39m
+[90m        "udid" : "0C5F957B-74DA-4BB1-B4C4-8A119C5164C4",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      }[39m
+[90m    ],[39m
+[90m    "com.apple.CoreSimulator.SimRuntime.tvOS-12-2" : [[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple TV",[39m
+[90m        "udid" : "606BFE0F-D420-423C-A626-9C1A29637453",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple TV 4K",[39m
+[90m        "udid" : "38754D7C-AC92-474F-8E8C-CBB26E8AA3C8",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      },[39m
+[90m      {[39m
+[90m        "availability" : "(unavailable, runtime profile not found)",[39m
+[90m        "state" : "Shutdown",[39m
+[90m        "isAvailable" : false,[39m
+[90m        "name" : "Apple TV 4K (at 1080p)",[39m
+[90m        "udid" : "67883CCC-5634-412D-A710-102B231904D1",[39m
+[90m        "availabilityError" : "runtime profile not found"[39m
+[90m      }[39m
+[90m    ][39m
+[90m  },[39m
+[90m  "pairs" : {[39m
+[90m    "EE500A5B-EA5A-4096-B11B-BBF2C1F2D304" : {[39m
+[90m      "watch" : {[39m
+[90m        "name" : "Apple Watch Series 4 - 44mm",[39m
+[90m        "udid" : "0C5F957B-74DA-4BB1-B4C4-8A119C5164C4",[39m
+[90m        "state" : "Shutdown"[39m
+[90m      },[39m
+[90m      "phone" : {[39m
+[90m        "name" : "iPhone XS Max",[39m
+[90m        "udid" : "F2140085-402A-4AEA-BB21-10FA6CD96DF3",[39m
+[90m        "state" : "Shutdown"[39m
+[90m      },[39m
+[90m      "state" : "(unavailable)"[39m
+[90m    },[39m
+[90m    "515A6FCA-6017-472F-92C3-B9173560A039" : {[39m
+[90m      "watch" : {[39m
+[90m        "name" : "Apple Watch Series 4 - 44mm",[39m
+[90m        "udid" : "7D9F5703-2CA4-4DAC-99C4-04B5A1A94BAF",[39m
+[90m        "state" : "Shutdown"[39m
+[90m      },[39m
+[90m      "phone" : {[39m
+[90m        "name" : "iPhone Xs Max",[39m
+[90m        "udid" : "C80345D0-32D0-4DC2-B4B7-E66B19733CBA",[39m
+[90m        "state" : "Shutdown"[39m
+[90m      },[39m
+[90m      "state" : "(unavailable)"[39m
+[90m    },[39m
+[90m    "9B1F39ED-E0C4-420F-8269-4E9EA9973E58" : {[39m
+[90m      "watch" : {[39m
+[90m        "name" : "Apple Watch Series 4 - 40mm",[39m
+[90m        "udid" : "F2B06159-CEB2-41B3-8389-01B0FD9C39BF",[39m
+[90m        "state" : "Shutdown"[39m
+[90m      },[39m
+[90m      "phone" : {[39m
+[90m        "name" : "iPhone XS",[39m
+[90m        "udid" : "64455551-525E-48AD-91D7-165C460891D5",[39m
+[90m        "state" : "Shutdown"[39m
+[90m      },[39m
+[90m      "state" : "(unavailable)"[39m
+[90m    },[39m
+[90m    "81F26D67-DD18-4B23-84C3-2BB2FAE48BD1" : {[39m
+[90m      "watch" : {[39m
+[90m        "name" : "Apple Watch Series 4 - 40mm",[39m
+[90m        "udid" : "69ED2D44-7438-4994-8C6B-31E66731DD79",[39m
+[90m        "state" : "Shutdown"[39m
+[90m      },[39m
+[90m      "phone" : {[39m
+[90m        "name" : "iPhone Xs",[39m
+[90m        "udid" : "19879E87-E65E-48DA-BBF1-A5C6E2364226",[39m
+[90m        "state" : "Shutdown"[39m
+[90m      },[39m
+[90m      "state" : "(unavailable)"[39m
+[90m    },[39m
+[90m    "0F85F5BB-8BBE-40EA-BCCA-4E1288DFFE53" : {[39m
+[90m      "watch" : {[39m
+[90m        "name" : "Apple Watch Series 3 - 38mm",[39m
+[90m        "udid" : "68061C78-4BF1-44C9-AB14-97F04D76C86E",[39m
+[90m        "state" : "Shutdown"[39m
+[90m      },[39m
+[90m      "phone" : {[39m
+[90m        "name" : "iPhone 8",[39m
+[90m        "udid" : "056254BB-D3F8-4D4E-9A26-4A63956C1DA1",[39m
+[90m        "state" : "Shutdown"[39m
+[90m      },[39m
+[90m      "state" : "(unavailable)"[39m
+[90m    },[39m
+[90m    "A52552D9-12FF-4582-AF0F-5072DD9DBF4C" : {[39m
+[90m      "watch" : {[39m
+[90m        "name" : "Apple Watch Series 4 - 40mm",[39m
+[90m        "udid" : "DA47418B-994E-4258-8456-EE87B631816F",[39m
+[90m        "state" : "Shutdown"[39m
+[90m      },[39m
+[90m      "phone" : {[39m
+[90m        "name" : "iPhone XS",[39m
+[90m        "udid" : "BC9ADB3B-C0DF-4ED8-9FE9-FA3259BF1399",[39m
+[90m        "state" : "Shutdown"[39m
+[90m      },[39m
+[90m      "state" : "(active, disconnected)"[39m
+[90m    },[39m
+[90m    "08D21415-07A6-498E-B578-0FEA830CCC26" : {[39m
+[90m      "watch" : {[39m
+[90m        "name" : "Apple Watch Series 2 - 38mm",[39m
+[90m        "udid" : "E27AC9C0-5284-4833-8A68-73C5E795CD4D",[39m
+[90m        "state" : "Shutdown"[39m
+[90m      },[39m
+[90m      "phone" : {[39m
+[90m        "name" : "iPhone 7",[39m
+[90m        "udid" : "C6B0D43F-7534-4392-8D96-763E52020BED",[39m
+[90m        "state" : "Shutdown"[39m
+[90m      },[39m
+[90m      "state" : "(unavailable)"[39m
+[90m    },[39m
+[90m    "275FA600-2139-4854-B930-771D121343DD" : {[39m
+[90m      "watch" : {[39m
+[90m        "name" : "Apple Watch Series 4 - 44mm",[39m
+[90m        "udid" : "1F5FD61F-1C06-484F-BA7F-AB85F6AE132C",[39m
+[90m        "state" : "Shutdown"[39m
+[90m      },[39m
+[90m      "phone" : {[39m
+[90m        "name" : "iPhone XS Max",[39m
+[90m        "udid" : "BBD5ED2A-0B69-4987-94DC-BE83DAAAB9CD",[39m
+[90m        "state" : "Shutdown"[39m
+[90m      },[39m
+[90m      "state" : "(active, disconnected)"[39m
+[90m    },[39m
+[90m    "2D2C51F9-7FF7-45C9-94AF-C4EB97AF7455" : {[39m
+[90m      "watch" : {[39m
+[90m        "name" : "Apple Watch Series 2 - 42mm",[39m
+[90m        "udid" : "1B79852C-9FA4-499E-9EB3-6F12DD49A94A",[39m
+[90m        "state" : "Shutdown"[39m
+[90m      },[39m
+[90m      "phone" : {[39m
+[90m        "name" : "iPhone 7 Plus",[39m
+[90m        "udid" : "122559D0-F132-4DEA-945B-31FEBA1F653E",[39m
+[90m        "state" : "Shutdown"[39m
+[90m      },[39m
+[90m      "state" : "(unavailable)"[39m
+[90m    },[39m
+[90m    "91E64433-E5F8-4BEF-ADE9-115E9CDDEA62" : {[39m
+[90m      "watch" : {[39m
+[90m        "name" : "Apple Watch Series 3 - 42mm",[39m
+[90m        "udid" : "5F8C8B5D-9A24-4F1B-8826-69ACD5ADAC2F",[39m
+[90m        "state" : "Shutdown"[39m
+[90m      },[39m
+[90m      "phone" : {[39m
+[90m        "name" : "iPhone 8 Plus",[39m
+[90m        "udid" : "369E55F2-7F5B-4521-8819-C80E1EEF2502",[39m
+[90m        "state" : "Shutdown"[39m
+[90m      },[39m
+[90m      "state" : "(unavailable)"[39m
+[90m    }[39m
+[90m  }[39m
+[90m}[39m
+[90m[39m
+detox[74931] DEBUG: [exec.js/EXEC_CMD, #1] [36mapplesimutils --list --byType "iPhone 7" --byOS "12.1"[39m
+detox[74931] DEBUG: [exec.js/EXEC_TRY, #1] [36mSearching for device matching iPhone 7...[39m
+detox[74931] TRACE: [exec.js/EXEC_SUCCESS, #1] [90m[[39m
+[90m  {[39m
+[90m    "availabilityError" : "",[39m
+[90m    "os" : {[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime",[39m
+[90m      "availabilityError" : "",[39m
+[90m      "buildversion" : "16B91",[39m
+[90m      "availability" : "(available)",[39m
+[90m      "isAvailable" : true,[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimRuntime.iOS-12-1",[39m
+[90m      "version" : "12.1",[39m
+[90m      "name" : "iOS 12.1"[39m
+[90m    },[39m
+[90m    "availability" : "(available)",[39m
+[90m    "deviceType" : {[39m
+[90m      "name" : "iPhone 7",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 7.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-7"[39m
+[90m    },[39m
+[90m    "udid" : "3D28C903-3C4F-4AB1-B976-6742420D6332",[39m
+[90m    "isAvailable" : true,[39m
+[90m    "state" : "Booted",[39m
+[90m    "name" : "iPhone 7"[39m
+[90m  },[39m
+[90m  {[39m
+[90m    "availabilityError" : "",[39m
+[90m    "os" : {[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime",[39m
+[90m      "availabilityError" : "",[39m
+[90m      "buildversion" : "16B91",[39m
+[90m      "availability" : "(available)",[39m
+[90m      "isAvailable" : true,[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimRuntime.iOS-12-1",[39m
+[90m      "version" : "12.1",[39m
+[90m      "name" : "iOS 12.1"[39m
+[90m    },[39m
+[90m    "availability" : "(available)",[39m
+[90m    "deviceType" : {[39m
+[90m      "name" : "iPhone 7",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 7.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-7"[39m
+[90m    },[39m
+[90m    "udid" : "3D28C903-3C4F-4AB1-B976-6742420D6332",[39m
+[90m    "isAvailable" : true,[39m
+[90m    "state" : "Booted",[39m
+[90m    "name" : "iPhone 7"[39m
+[90m  }[39m
+[90m][39m
+[90m[39m
+detox[74931] DEBUG: [exec.js/EXEC_CMD, #2] [36mapplesimutils --list --byId "3D28C903-3C4F-4AB1-B976-6742420D6332"[39m
+detox[74931] TRACE: [exec.js/EXEC_SUCCESS, #2] [90m[[39m
+[90m  {[39m
+[90m    "availabilityError" : "",[39m
+[90m    "os" : {[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime",[39m
+[90m      "availabilityError" : "",[39m
+[90m      "buildversion" : "16B91",[39m
+[90m      "availability" : "(available)",[39m
+[90m      "isAvailable" : true,[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimRuntime.iOS-12-1",[39m
+[90m      "version" : "12.1",[39m
+[90m      "name" : "iOS 12.1"[39m
+[90m    },[39m
+[90m    "availability" : "(available)",[39m
+[90m    "deviceType" : {[39m
+[90m      "name" : "iPhone 7",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 7.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-7"[39m
+[90m    },[39m
+[90m    "udid" : "3D28C903-3C4F-4AB1-B976-6742420D6332",[39m
+[90m    "isAvailable" : true,[39m
+[90m    "state" : "Booted",[39m
+[90m    "name" : "iPhone 7"[39m
+[90m  },[39m
+[90m  {[39m
+[90m    "availabilityError" : "",[39m
+[90m    "os" : {[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime",[39m
+[90m      "availabilityError" : "",[39m
+[90m      "buildversion" : "16B91",[39m
+[90m      "availability" : "(available)",[39m
+[90m      "isAvailable" : true,[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimRuntime.iOS-12-1",[39m
+[90m      "version" : "12.1",[39m
+[90m      "name" : "iOS 12.1"[39m
+[90m    },[39m
+[90m    "availability" : "(available)",[39m
+[90m    "deviceType" : {[39m
+[90m      "name" : "iPhone 7",[39m
+[90m      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Developer\/Library\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 7.simdevicetype",[39m
+[90m      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-7"[39m
+[90m    },[39m
+[90m    "udid" : "3D28C903-3C4F-4AB1-B976-6742420D6332",[39m
+[90m    "isAvailable" : true,[39m
+[90m    "state" : "Booted",[39m
+[90m    "name" : "iPhone 7"[39m
+[90m  }[39m
+[90m][39m
+[90m[39m
+detox[74931] TRACE: [ArtifactsManager.js/LIFECYCLE] [90martifactsManager.onBootDevice({ coldBoot: false,[39m
+[90m  deviceId: '3D28C903-3C4F-4AB1-B976-6742420D6332' })[39m
+detox[74931] TRACE: [ArtifactsManager.js/LIFECYCLE] [90martifactsManager.onBeforeUninstallApp({ deviceId: '3D28C903-3C4F-4AB1-B976-6742420D6332',[39m
+[90m  bundleId: 'com.expokit-detox-test.expokit-detox-test' })[39m
+detox[74931] DEBUG: [exec.js/EXEC_CMD, #3] [36m/usr/bin/xcrun simctl uninstall 3D28C903-3C4F-4AB1-B976-6742420D6332 com.expokit-detox-test.expokit-detox-test[39m
+detox[74931] DEBUG: [exec.js/EXEC_TRY, #3] [36mUninstalling com.expokit-detox-test.expokit-detox-test...[39m
+detox[74931] TRACE: [exec.js/EXEC_SUCCESS, #3] 
+detox[74931] DEBUG: [exec.js/EXEC_SUCCESS, #3] [36mcom.expokit-detox-test.expokit-detox-test uninstalled[39m
+detox[74931] DEBUG: [exec.js/EXEC_CMD, #4] [36m/usr/bin/xcrun simctl install 3D28C903-3C4F-4AB1-B976-6742420D6332 "/Users/jean-marieporchet/Code/expokit-detox-test/ios/build/Build/Products/Debug-iphonesimulator/expokit-detox-test.app"[39m
+detox[74931] DEBUG: [exec.js/EXEC_TRY, #4] [36mInstalling /Users/jean-marieporchet/Code/expokit-detox-test/ios/build/Build/Products/Debug-iphonesimulator/expokit-detox-test.app...[39m
+detox[74931] DEBUG: [exec.js/EXEC_TRY, #4] [36mInstalling /Users/jean-marieporchet/Code/expokit-detox-test/ios/build/Build/Products/Debug-iphonesimulator/expokit-detox-test.app...[39m
+detox[74931] TRACE: [exec.js/EXEC_SUCCESS, #4] 
+detox[74931] DEBUG: [exec.js/EXEC_SUCCESS, #4] [36m/Users/jean-marieporchet/Code/expokit-detox-test/ios/build/Build/Products/Debug-iphonesimulator/expokit-detox-test.app installed[39m
+detox[74931] TRACE: [ArtifactsManager.js/LIFECYCLE] [90martifactsManager.onBeforeTerminateApp({ deviceId: '3D28C903-3C4F-4AB1-B976-6742420D6332',[39m
+[90m  bundleId: 'com.expokit-detox-test.expokit-detox-test' })[39m
+detox[74931] DEBUG: [exec.js/EXEC_CMD, #5] [36m/usr/bin/xcrun simctl terminate 3D28C903-3C4F-4AB1-B976-6742420D6332 com.expokit-detox-test.expokit-detox-test[39m
+detox[74931] DEBUG: [exec.js/EXEC_TRY, #5] [36mTerminating com.expokit-detox-test.expokit-detox-test...[39m
+detox[74931] TRACE: [exec.js/EXEC_SUCCESS, #5] 
+detox[74931] DEBUG: [exec.js/EXEC_SUCCESS, #5] [36mcom.expokit-detox-test.expokit-detox-test terminated[39m
+detox[74931] TRACE: [ArtifactsManager.js/LIFECYCLE] [90martifactsManager.onBeforeLaunchApp({ bundleId: 'com.expokit-detox-test.expokit-detox-test',[39m
+[90m  deviceId: '3D28C903-3C4F-4AB1-B976-6742420D6332',[39m
+[90m  launchArgs:[39m
+[90m   { '-detoxServer': 'ws://localhost:63374',[39m
+[90m     '-detoxSessionId': '03e82974-2785-e385-ffc7-8e33bc490afc' } })[39m
+detox[74931] DEBUG: [exec.js/EXEC_CMD, #6] [36m/bin/cat /dev/null >/Users/jean-marieporchet/Library/Developer/CoreSimulator/Devices/3D28C903-3C4F-4AB1-B976-6742420D6332/data/tmp/detox.last_launch_app_log.out 2>/Users/jean-marieporchet/Library/Developer/CoreSimulator/Devices/3D28C903-3C4F-4AB1-B976-6742420D6332/data/tmp/detox.last_launch_app_log.err && SIMCTL_CHILD_DYLD_INSERT_LIBRARIES="/Users/jean-marieporchet/Library/Detox/ios/01001b9f07d746033f8165649028cd8c9f855bd7/Detox.framework/Detox" /usr/bin/xcrun simctl launch --stdout=/tmp/detox.last_launch_app_log.out --stderr=/tmp/detox.last_launch_app_log.err 3D28C903-3C4F-4AB1-B976-6742420D6332 com.expokit-detox-test.expokit-detox-test --args -detoxServer "ws://localhost:63374" -detoxSessionId "03e82974-2785-e385-ffc7-8e33bc490afc"[39m
+detox[74931] DEBUG: [exec.js/EXEC_TRY, #6] [36mLaunching com.expokit-detox-test.expokit-detox-test...[39m
+detox[74931] TRACE: [exec.js/EXEC_SUCCESS, #6] [90mcom.expokit-detox-test.expokit-detox-test: 74985[39m
+[90m[39m
+detox[74931] INFO:  [AppleSimUtils.js] [32mcom.expokit-detox-test.expokit-detox-test launched. The stdout and stderr logs were recreated, you can watch them with:[39m
+[32m        tail -F /Users/jean-marieporchet/Library/Developer/CoreSimulator/Devices/3D28C903-3C4F-4AB1-B976-6742420D6332/data/tmp/detox.last_launch_app_log.{out,err}[39m
+detox[74985] TRACE: [ArtifactsManager.js/LIFECYCLE] [90martifactsManager.onLaunchApp({ bundleId: 'com.expokit-detox-test.expokit-detox-test',[39m
+[90m  deviceId: '3D28C903-3C4F-4AB1-B976-6742420D6332',[39m
+[90m  launchArgs:[39m
+[90m   { '-detoxServer': 'ws://localhost:63374',[39m
+[90m     '-detoxSessionId': '03e82974-2785-e385-ffc7-8e33bc490afc' },[39m
+[90m  pid: 74985 })[39m
+detox[74931] TRACE: [AsyncWebSocket.js/WEBSOCKET_SEND] [90m{"type":"isReady","params":{},"messageId":-1000}[39m
+detox[74931] TRACE: [DetoxServer.js/MESSAGE] [90mrole=tester action=isReady (sessionId=03e82974-2785-e385-ffc7-8e33bc490afc)[39m
+detox[74931] DEBUG: [DetoxServer.js/CANNOT_FORWARD] [36mrole=testee not connected, cannot fw action (sessionId=03e82974-2785-e385-ffc7-8e33bc490afc)[39m
+detox[74931] DEBUG: [DetoxServer.js/LOGIN] [36mrole=testee, sessionId=03e82974-2785-e385-ffc7-8e33bc490afc[39m
+detox[74931] DEBUG: [DetoxServer.js/LOGIN_SUCCESS] [36mrole=testee, sessionId=03e82974-2785-e385-ffc7-8e33bc490afc[39m
+detox[74931] DEBUG: [DetoxServer.js/DISCONNECT] [36mrole=tester, sessionId=03e82974-2785-e385-ffc7-8e33bc490afc[39m
+detox[74931] DEBUG: [DetoxServer.js/DISCONNECT] [36mrole=testee, sessionId=03e82974-2785-e385-ffc7-8e33bc490afc[39m
+detox[74931] TRACE: [Detox.js/DETOX_BEFORE_EACH] [90mrunning test: "Example should have welcome screen"[39m
+detox[74931] TRACE: [ArtifactsManager.js/LIFECYCLE] [90martifactsManager.onBeforeEach({ title: 'should have welcome screen',[39m
+[90m  fullName: 'Example should have welcome screen',[39m
+[90m  status: 'running' })[39m
+detox[74931] TRACE: [Detox.js/DETOX_AFTER_EACH] [90mfailed test: "Example should have welcome screen"[39m
+detox[74931] TRACE: [ArtifactsManager.js/LIFECYCLE] [90martifactsManager.onAfterEach({ title: 'should have welcome screen',[39m
+[90m  fullName: 'Example should have welcome screen',[39m
+[90m  status: 'failed' })[39m
+detox[74931] TRACE: [Detox.js/DETOX_BEFORE_EACH] [90mrunning test: "Example should show hello screen after tap"[39m
+detox[74931] TRACE: [ArtifactsManager.js/LIFECYCLE] [90martifactsManager.onBeforeEach({ title: 'should show hello screen after tap',[39m
+[90m  fullName: 'Example should show hello screen after tap',[39m
+[90m  status: 'running' })[39m
+detox[74931] TRACE: [Detox.js/DETOX_AFTER_EACH] [90mfailed test: "Example should show hello screen after tap"[39m
+detox[74931] TRACE: [ArtifactsManager.js/LIFECYCLE] [90martifactsManager.onAfterEach({ title: 'should show hello screen after tap',[39m
+[90m  fullName: 'Example should show hello screen after tap',[39m
+[90m  status: 'failed' })[39m
+detox[74931] TRACE: [Detox.js/DETOX_BEFORE_EACH] [90mrunning test: "Example should show world screen after tap"[39m
+detox[74931] TRACE: [ArtifactsManager.js/LIFECYCLE] [90martifactsManager.onBeforeEach({ title: 'should show world screen after tap',[39m
+[90m  fullName: 'Example should show world screen after tap',[39m
+[90m  status: 'running' })[39m
+detox[74931] TRACE: [Detox.js/DETOX_AFTER_EACH] [90mfailed test: "Example should show world screen after tap"[39m
+detox[74931] TRACE: [ArtifactsManager.js/LIFECYCLE] [90martifactsManager.onAfterEach({ title: 'should show world screen after tap',[39m
+[90m  fullName: 'Example should show world screen after tap',[39m
+[90m  status: 'failed' })[39m
+detox[74931] TRACE: [ArtifactsManager.js/LIFECYCLE] [90martifactsManager.onAfterAll()[39m
+detox[74930] ERROR: [cli.js] [31mError: Command failed: node_modules/.bin/jest --config=e2e/config.json --maxWorkers=1 '--testNamePattern=^((?!:android:).)*$' "e2e"[39m
