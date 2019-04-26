@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "expokit-detox-test",
+    "slug": "expokit-detox-test",
+    "privacy": "public",
+    "sdkVersion": "32.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.expokit-detox-test.expokit-detox-test",
+      "publishBundlePath": "ios/expokit-detox-test/Supporting/shell-app.bundle",
+      "publishManifestPath": "ios/expokit-detox-test/Supporting/shell-app-manifest.json"
+    },
+    "isDetached": true,
+    "detach": {
+      "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v2.10.6-sdk32.0.0-e50ee83a-41bd-4965-b067-4c815a3b3fcc.tar.gz",
+      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.10.8-sdk32.0.0-bca0f957-de78-44c8-91ed-f3151372d79d.tar.gz"
+    },
+    "scheme": "expaeba0f5d0af6433d908eb08b5ab842e5",
+    "android": {
+      "package": "com.expokit_detox_test.expokit_detox_test",
+      "publishBundlePath": "android/app/src/main/assets/shell-app.bundle",
+      "publishManifestPath": "android/app/src/main/assets/shell-app-manifest.json"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+# expo
+.expo/
+# https://forums.expo.io/t/dealing-with-version-control-git-and-detached-expo-project/1233
+/ios/**/EXBuildConstants.*
+
+# dependencies
+/node_modules
+
+# misc
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OSX
+#
+.DS_Store
+
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+
+# CocoaPods
+# Given the huge dependencies of the iOS native project (440MB+), only Podfile.lock is committed
+/ios/Pods/
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.jks
+
+# Testing
+coverage/
+.jest/
