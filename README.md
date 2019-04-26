@@ -6,5 +6,8 @@ To get started enter the following commands:
 
 `yarn`
 `cd ios && pod install && cd ..` (that should take at least a few minutes)
+`expo start` to start the bundler
 `detox build`
-`detox test` add the `--loglevel trace` flag for verbose output
+`detox test`, and add the `--loglevel trace` flag for verbose output
+
+The trace log output has been stored in `trace.txt` via `detox test --loglevel trace > trace.txt`
