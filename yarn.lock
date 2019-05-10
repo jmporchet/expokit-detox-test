@@ -2232,10 +2232,10 @@ detect-newline@^2.1.0:
   resolved "https://registry.yarnpkg.com/detect-newline/-/detect-newline-2.1.0.tgz#f41f1c10be4b00e87b5f13da680759f2c5bfd3e2"
   integrity sha1-9B8cEL5LAOh7XxPaaAdZ8sW/0+I=
 
-detox@^12.4.1:
-  version "12.4.1"
-  resolved "https://registry.yarnpkg.com/detox/-/detox-12.4.1.tgz#93de225fe7ab4d6f5540bd771b2d28db487b443e"
-  integrity sha512-teoNGSmGmTXhrtd3i/DKq+ORGViZ5NZ9olqQc7O53jVQ7Ozfwb9x3rBOdxkdlNtUCQ+PwCVCuU3veBcN/KI64Q==
+detox@^12.7.0:
+  version "12.7.0"
+  resolved "https://registry.yarnpkg.com/detox/-/detox-12.7.0.tgz#f1207ca97f9a0a804cc0ceff494891b14c5c186b"
+  integrity sha512-g6gRotPV2QwRW21VoYo1ko7gLi0pMSS360Hhmt6d1UQ4kvg5BUgIaifdwwxahfVAKJQVhu4ixkwyFu1R9gIe7Q==
   dependencies:
     bunyan "^1.8.12"
     bunyan-debug-stream "^1.1.0"
@@ -2755,7 +2755,7 @@ expo-task-manager@~1.0.0:
     expo-errors "~1.0.0"
     expo-task-manager-interface "~1.0.0"
 
-expo@^32.0.0:
+expo@^32.0.6:
   version "32.0.6"
   resolved "https://registry.yarnpkg.com/expo/-/expo-32.0.6.tgz#71ef60ac5293b9ca8f2219584bc6add8a975714b"
   integrity sha512-LMFtWZY+lwMHkoThTBwirctPB/5WeZtGrVM8MVoCI1e7jlONOfNQceM6X2j06BO5HxcCF/ASJSUDiTIIStAeaA==
@@ -5174,7 +5174,7 @@ react-native-gesture-handler@~1.0.14:
     invariant "^2.2.2"
     prop-types "^15.5.10"
 
-react-native-maps@expo/react-native-maps#v0.22.1-exp.0:
+"react-native-maps@github:expo/react-native-maps#v0.22.1-exp.0":
   version "0.22.1"
   resolved "https://codeload.github.com/expo/react-native-maps/tar.gz/e6f98ff7272e5d0a7fe974a41f28593af2d77bb2"
 

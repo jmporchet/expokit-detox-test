@@ -9,15 +9,15 @@
     "test:e2e:build": "detox build"
   },
   "dependencies": {
-    "expo": "^32.0.0",
+    "expo": "^32.0.6",
     "expokit": "32.1.1",
-    "mocha": "^6.1.4",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0",
-    "detox": "^12.4.1"
+    "detox": "^12.7.0",
+    "mocha": "^6.1.4"
   },
   "private": true,
   "detox": {
