@@ -10,13 +10,13 @@
   },
   "dependencies": {
     "expo": "^32.0.6",
-    "expokit": "32.1.1",
+    "expokit": "32.1.2",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.1.1",
-    "detox": "^12.7.0",
+    "detox": "^12.10.0",
     "jest": "^24.8.0"
   },
   "private": true,
