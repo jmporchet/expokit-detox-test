@@ -2232,10 +2232,10 @@ detect-newline@^2.1.0:
   resolved "https://registry.yarnpkg.com/detect-newline/-/detect-newline-2.1.0.tgz#f41f1c10be4b00e87b5f13da680759f2c5bfd3e2"
   integrity sha1-9B8cEL5LAOh7XxPaaAdZ8sW/0+I=
 
-detox@^12.7.0:
-  version "12.7.0"
-  resolved "https://registry.yarnpkg.com/detox/-/detox-12.7.0.tgz#f1207ca97f9a0a804cc0ceff494891b14c5c186b"
-  integrity sha512-g6gRotPV2QwRW21VoYo1ko7gLi0pMSS360Hhmt6d1UQ4kvg5BUgIaifdwwxahfVAKJQVhu4ixkwyFu1R9gIe7Q==
+detox@^12.10.0:
+  version "12.10.0"
+  resolved "https://registry.yarnpkg.com/detox/-/detox-12.10.0.tgz#894c16d8efaf2b5b2a21a0c9ca164a2324e5e7c9"
+  integrity sha512-Mvc9NAki9D3GwwatRucQohRzBWwtaIROE0jSKjI+yGahX6INUTc9ISJOFLl6W/x+BBUROVFhap6soBcV2aaA0Q==
   dependencies:
     bunyan "^1.8.12"
     bunyan-debug-stream "^1.1.0"
@@ -2832,10 +2832,10 @@ expo@^32.0.6:
     uuid-js "^0.7.5"
     whatwg-fetch "^2.0.4"
 
-expokit@32.1.1:
-  version "32.1.1"
-  resolved "https://registry.yarnpkg.com/expokit/-/expokit-32.1.1.tgz#55e763d4fa26eb3627d06fcb12d0e3c87d767c2c"
-  integrity sha512-mUorcCKpI11afzPolBJhpq1trnUcDq5lYoDc/uTOQEJwdFqF8oDa608p50LbNPxC6/583+PrwIgQmiKqKO3VIA==
+expokit@32.1.2:
+  version "32.1.2"
+  resolved "https://registry.yarnpkg.com/expokit/-/expokit-32.1.2.tgz#872524e92d7e49aefa953a9f869fe10b553ee132"
+  integrity sha512-NwK13vKc0GmzxrqNE7IAZ45TjnpPW7oD75JMRkNB2kCbpAm/1iKP7p2RTQPhl4fTNh/ROtRwpPIsL0w3cdMMAg==
   dependencies:
     jsc-android "^224109.1.0"
 
@@ -5174,7 +5174,7 @@ react-native-gesture-handler@~1.0.14:
     invariant "^2.2.2"
     prop-types "^15.5.10"
 
-"react-native-maps@github:expo/react-native-maps#v0.22.1-exp.0":
+react-native-maps@expo/react-native-maps#v0.22.1-exp.0:
   version "0.22.1"
   resolved "https://codeload.github.com/expo/react-native-maps/tar.gz/e6f98ff7272e5d0a7fe974a41f28593af2d77bb2"
 
